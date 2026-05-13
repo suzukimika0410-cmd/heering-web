@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ひーring | ベビーシッター・家事サポート</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+
+  <!-- OGP -->
+  <meta property="og:title" content="ひーring | ベビーシッター・家事サポート" />
+  <meta property="og:description" content="子育て中のご家庭に寄り添うサポート。ベビーシッター・家事サポート・産後ケアなど、まずはお気軽にご相談ください。" />
+  <meta property="og:image" content="logo.png" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="description" content="子育て中のご家庭に寄り添うサポート。ベビーシッター・家事サポート・産後ケアなど、まずはお気軽にご相談ください。" />
+
+  <!-- Google Analytics（デプロイ後にGA_MEASUREMENT_IDを差し替えてください） -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','GA_MEASUREMENT_ID');</script> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo">
+        <img src="logo.png" alt="ひーring" class="nav__logo-img" />
+      </a>
+      <button class="nav__hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      <nav class="nav__links" id="navLinks">
+        <a href="#service">Service</a>
+        <a href="#price">Price</a>
+        <a href="#faq">FAQ</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <div class="lang-dropdown" id="langDropdown">
+          <button class="lang-toggle" id="langToggle">
+            <span id="langLabel">JA</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </button>
+          <ul class="lang-menu">
+            <li><button data-lang="ja">日本語</button></li>
+            <li><button data-lang="en">English</button></li>
+            <li><button data-lang="zh-cn">中文（简体）</button></li>
+            <li><button data-lang="zh-hk">中文（香港）</button></li>
+            <li><button data-lang="zh-tw">中文（台灣）</button></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__content">
+      <p class="hero__eyebrow"
+        data-ja="ベビーシッター・家事サポート" data-en="Babysitting & Household Support"
+        data-zh-cn="育儿保姆・家务帮助" data-zh-hk="保姆服務・家務協助" data-zh-tw="保母服務・家務協助">ベビーシッター・家事サポート</p>
+      <h1 class="hero__title">
+        <span data-ja="あなたの毎日に、" data-en="A moment to breathe," data-zh-cn="让您的每一天，" data-zh-hk="讓您的每一天，" data-zh-tw="讓您的每一天，">あなたの毎日に、</span><br>
+        <span class="hero__title-accent"
+          data-ja="ほっとできる時間を。" data-en="in your everyday life." data-zh-cn="多一点喘息的时间。" data-zh-hk="多一點喘息的時間。" data-zh-tw="多一點喘息的時間。">ほっとできる時間を。</span>
+      </h1>
+      <p class="hero__sub"
+        data-ja="子育て中の忙しい毎日、もっと自分らしく過ごしてほしい。ひーringは、あなたのご家庭に寄り添うサポートを提供します。"
+        data-en="Parenting is busy. ひーring is here to support your family so you can take a moment for yourself."
+        data-zh-cn="育儿的日子很忙碌。ひーring为您的家庭提供贴心支持，让您拥有属于自己的时间。"
+        data-zh-hk="育兒的日子很忙碌。ひーring為您的家庭提供貼心支援，讓您擁有屬於自己的時間。"
+        data-zh-tw="育兒的日子很忙碌。ひーring為您的家庭提供貼心支援，讓您擁有屬於自己的時間。">
+        子育て中の忙しい毎日、もっと自分らしく過ごしてほしい。<br>
+        ひーringは、あなたのご家庭に寄り添うサポートを提供します。
+      </p>
+      <a href="#contact" class="btn btn--primary"
+        data-ja="お問い合わせ・相談無料" data-en="Free Consultation"
+        data-zh-cn="免费咨询" data-zh-hk="免費諮詢" data-zh-tw="免費諮詢">お問い合わせ・相談無料</a>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__blob"></div>
+      <div class="hero__illustration">
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="200" cy="340" rx="150" ry="20" fill="#e2c47a" opacity="0.4"/>
+          <rect x="120" y="200" width="160" height="130" rx="16" fill="#e2c47a"/>
+          <polygon points="100,205 200,130 300,205" fill="#c4922a"/>
+          <rect x="170" y="270" width="60" height="60" rx="8" fill="#fdf8ef"/>
+          <circle cx="220" cy="300" r="5" fill="#c4922a"/>
+          <rect x="130" y="220" width="40" height="35" rx="6" fill="#faf0d7"/>
+          <line x1="150" y1="220" x2="150" y2="255" stroke="#e2c47a" stroke-width="2"/>
+          <line x1="130" y1="237" x2="170" y2="237" stroke="#e2c47a" stroke-width="2"/>
+          <rect x="230" y="220" width="40" height="35" rx="6" fill="#faf0d7"/>
+          <line x1="250" y1="220" x2="250" y2="255" stroke="#e2c47a" stroke-width="2"/>
+          <line x1="230" y1="237" x2="270" y2="237" stroke="#e2c47a" stroke-width="2"/>
+          <circle cx="165" cy="160" r="22" fill="#f4c98a"/>
+          <rect x="148" y="182" width="34" height="45" rx="10" fill="#c4922a"/>
+          <rect x="136" y="185" width="12" height="32" rx="6" fill="#c4922a"/>
+          <rect x="182" y="185" width="12" height="32" rx="6" fill="#c4922a"/>
+          <circle cx="240" cy="170" r="17" fill="#f4c98a"/>
+          <rect x="226" y="187" width="28" height="36" rx="8" fill="#d4a94a"/>
+          <rect x="215" y="190" width="11" height="25" rx="5" fill="#d4a94a"/>
+          <rect x="254" y="190" width="11" height="25" rx="5" fill="#d4a94a"/>
+          <text x="195" y="120" font-size="22" fill="#c4922a" opacity="0.9">♡</text>
+          <text x="270" y="145" font-size="14" fill="#c4922a" opacity="0.7">♡</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SERVICE -->
+  <section class="section service" id="service">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__label">Service</p>
+        <h2 class="section__title" data-ja="サービス内容" data-en="Our Services" data-zh-cn="服务内容" data-zh-hk="服務內容" data-zh-tw="服務內容">サービス内容</h2>
+        <p class="section__desc" data-ja="子育て中のご家庭に合わせた、さまざまなサポートをご用意しています。" data-en="We offer a range of services tailored to families with children." data-zh-cn="我们为有孩子的家庭提供多种贴心服务。" data-zh-hk="我們為有孩子的家庭提供多種貼心服務。" data-zh-tw="我們為有孩子的家庭提供多種貼心服務。">子育て中のご家庭に合わせた、さまざまなサポートをご用意しています。</p>
+      </div>
+      <div class="service__grid">
+        <div class="service-card">
+          <div class="service-card__icon">👶</div>
+          <h3 class="service-card__title" data-ja="ベビーシッター" data-en="Babysitting" data-zh-cn="保姆服务" data-zh-hk="保姆服務" data-zh-tw="保母服務">ベビーシッター</h3>
+          <p class="service-card__text" data-ja="お子様の年齢・発達段階に合わせた安全で温かいケアを提供します。外出・仕事・用事の間、安心してお任せください。" data-en="Safe, warm care tailored to your child's age and development." data-zh-cn="根据孩子的年龄和发育阶段提供安全温暖的照护。" data-zh-hk="根據孩子的年齡和發育階段提供安全溫暖的照護。" data-zh-tw="根據孩子的年齡和發育階段提供安全溫暖的照護。">お子様の年齢・発達段階に合わせた安全で温かいケアを提供します。外出・仕事・用事の間、安心してお任せください。</p>
+          <ul class="service-card__list">
+            <li data-ja="生後3ヶ月〜小学生対応" data-en="3 months – elementary school age" data-zh-cn="3个月～小学生" data-zh-hk="3個月～小學生" data-zh-tw="3個月～小學生">生後3ヶ月〜小学生対応</li>
+            <li data-ja="食事・おやつの補助" data-en="Meal & snack assistance" data-zh-cn="饮食辅助" data-zh-hk="飲食輔助" data-zh-tw="飲食輔助">食事・おやつの補助</li>
+            <li data-ja="入浴・寝かしつけサポート" data-en="Bath & bedtime support" data-zh-cn="洗澡及就寝协助" data-zh-hk="洗澡及就寢協助" data-zh-tw="洗澡及就寢協助">入浴・寝かしつけサポート</li>
+            <li data-ja="宿題・遊び相手" data-en="Homework & playtime" data-zh-cn="作业辅导及陪玩" data-zh-hk="功課輔導及陪玩" data-zh-tw="功課輔導及陪玩">宿題・遊び相手</li>
+          </ul>
+          <div class="service-card__booking">
+            <p class="service-card__booking-label" data-ja="ご利用方法を選べます" data-en="Choose how to book" data-zh-cn="可选择预约方式" data-zh-hk="可選擇預約方式" data-zh-tw="可選擇預約方式">ご利用方法を選べます</p>
+            <div class="booking-options">
+              <a href="https://www.poppins.co.jp/sitter/" target="_blank" rel="noopener" class="booking-option booking-option--poppins">
+                <span class="booking-option__name">ポピンズシッター</span>
+                <span class="booking-option__note" data-ja="保険・決済はアプリで安心" data-en="Insurance & payment via app" data-zh-cn="保险及付款通过应用" data-zh-hk="保險及付款透過應用" data-zh-tw="保險及付款透過應用">保険・決済はアプリで安心</span>
+              </a>
+              <a href="#contact" class="booking-option booking-option--direct">
+                <span class="booking-option__name" data-ja="個別契約" data-en="Direct Contract" data-zh-cn="个人直接合约" data-zh-hk="個人直接合約" data-zh-tw="個人直接合約">個別契約</span>
+                <span class="booking-option__note" data-ja="料金・条件を柔軟に相談" data-en="Flexible terms & pricing" data-zh-cn="灵活协商条件及费用" data-zh-hk="靈活協商條件及費用" data-zh-tw="靈活協商條件及費用">料金・条件を柔軟に相談</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="service-card service-card--accent">
+          <div class="service-card__icon">🏡</div>
+          <h3 class="service-card__title" data-ja="家事サポート" data-en="Household Support" data-zh-cn="家务帮助" data-zh-hk="家務協助" data-zh-tw="家務協助">家事サポート</h3>
+          <p class="service-card__text" data-ja="育児と家事の両立は大変です。掃除・洗濯・料理など、日常の家事を丁寧にお手伝いします。" data-en="Balancing childcare and household chores is hard. We'll take care of cleaning, laundry, cooking, and more." data-zh-cn="育儿和家务两者兼顾很辛苦。我们帮您打扫、洗衣、做饭等日常家务。" data-zh-hk="育兒和家務兩者兼顧很辛苦。我們幫您打掃、洗衣、煮飯等日常家務。" data-zh-tw="育兒和家務兩者兼顧很辛苦。我們幫您打掃、洗衣、煮飯等日常家務。">育児と家事の両立は大変です。掃除・洗濯・料理など、日常の家事を丁寧にお手伝いします。</p>
+          <ul class="service-card__list">
+            <li data-ja="掃除・整理整頓" data-en="Cleaning & tidying" data-zh-cn="打扫整理" data-zh-hk="打掃整理" data-zh-tw="打掃整理">掃除・整理整頓</li>
+            <li data-ja="洗濯・アイロンがけ" data-en="Laundry & ironing" data-zh-cn="洗衣及熨衣" data-zh-hk="洗衣及燙衣" data-zh-tw="洗衣及燙衣">洗濯・アイロンがけ</li>
+            <li data-ja="料理・作り置き" data-en="Cooking & meal prep" data-zh-cn="烹饪及备餐" data-zh-hk="烹飪及備餐" data-zh-tw="烹飪及備餐">料理・作り置き</li>
+            <li data-ja="買い物代行" data-en="Grocery shopping" data-zh-cn="代购" data-zh-hk="代購" data-zh-tw="代購">買い物代行</li>
+          </ul>
+        </div>
+        <div class="service-card service-card--exam">
+          <div class="service-card__badge" data-ja="経験者対応" data-en="Expert" data-zh-cn="经验者" data-zh-hk="經驗者" data-zh-tw="經驗者">経験者対応</div>
+          <div class="service-card__icon">🎓</div>
+          <h3 class="service-card__title" data-ja="小学校受験サポート" data-en="Elementary School Entrance Exam Support" data-zh-cn="小学入学考试辅导" data-zh-hk="小學入學考試輔導" data-zh-tw="小學入學考試輔導">小学校受験サポート</h3>
+          <p class="service-card__text" data-ja="自身の受験経験をもとに、お子様の受験準備をサポートします。日常のシッティング中にも自然に取り入れます。" data-en="Drawing on my own entrance exam experience, I help children prepare naturally during everyday care." data-zh-cn="凭借自身的考试经验，在日常照护中自然融入受验准备。" data-zh-hk="憑藉自身的考試經驗，在日常照護中自然融入受驗準備。" data-zh-tw="憑藉自身的考試經驗，在日常照護中自然融入受驗準備。">自身の受験経験をもとに、お子様の受験準備をサポートします。日常のシッティング中にも自然に取り入れます。</p>
+          <ul class="service-card__list">
+            <li data-ja="ペーパー・知育対策" data-en="Paper test & cognitive prep" data-zh-cn="笔试及智力训练" data-zh-hk="筆試及智力訓練" data-zh-tw="筆試及智力訓練">ペーパー・知育対策</li>
+            <li data-ja="行動観察・マナー指導" data-en="Behavior observation & etiquette" data-zh-cn="行为观察及礼仪指导" data-zh-hk="行為觀察及禮儀指導" data-zh-tw="行為觀察及禮儀指導">行動観察・マナー指導</li>
+            <li data-ja="親子面接の練習サポート" data-en="Parent-child interview practice" data-zh-cn="亲子面试练习" data-zh-hk="親子面試練習" data-zh-tw="親子面試練習">親子面接の練習サポート</li>
+            <li data-ja="志望校選びのご相談" data-en="School selection consultation" data-zh-cn="志愿学校选择咨询" data-zh-hk="志願學校選擇諮詢" data-zh-tw="志願學校選擇諮詢">志望校選びのご相談</li>
+          </ul>
+        </div>
+      </div>
+      <div class="service__note">
+        <p data-ja="※ 料金・対応エリアはお問い合わせ時にご案内します。まずはお気軽にご相談ください。" data-en="* Pricing and service areas will be shared upon inquiry." data-zh-cn="※ 费用及服务区域将在咨询时告知。" data-zh-hk="※ 費用及服務區域將在諮詢時告知。" data-zh-tw="※ 費用及服務區域將在諮詢時告知。">※ 料金・対応エリアはお問い合わせ時にご案内します。まずはお気軽にご相談ください。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICE -->
+  <section class="section price" id="price">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__label">Price</p>
+        <h2 class="section__title" data-ja="料金案内" data-en="Pricing" data-zh-cn="收费标准" data-zh-hk="收費標準" data-zh-tw="收費標準">料金案内</h2>
+        <p class="section__desc" data-ja="すべて税込み表示です。まずはお気軽にご相談ください。" data-en="All prices are tax-included. Feel free to inquire." data-zh-cn="以下价格均含税，欢迎咨询。" data-zh-hk="以下價格均含稅，歡迎諮詢。" data-zh-tw="以下價格均含稅，歡迎諮詢。">すべて税込み表示です。まずはお気軽にご相談ください。</p>
+      </div>
+      <div class="price__grid">
+        <div class="price-card">
+          <div class="price-card__icon">👶</div>
+          <h3 class="price-card__title" data-ja="ベビーシッター" data-en="Babysitting" data-zh-cn="保姆服务" data-zh-hk="保姆服務" data-zh-tw="保母服務">ベビーシッター</h3>
+          <div class="price-card__amount">¥1,500<span data-ja="〜 / 時間" data-en="〜 / hr" data-zh-cn="〜 / 小时" data-zh-hk="〜 / 小時" data-zh-tw="〜 / 小時">〜 / 時間</span></div>
+          <ul class="price-card__list">
+            <li data-ja="最低2時間〜" data-en="Min. 2 hours" data-zh-cn="最少2小时" data-zh-hk="最少2小時" data-zh-tw="最少2小時">最低2時間〜</li>
+            <li data-ja="交通費別途実費" data-en="Travel costs extra" data-zh-cn="交通费另计" data-zh-hk="交通費另計" data-zh-tw="交通費另計">交通費別途実費</li>
+            <li data-ja="深夜・早朝割増あり" data-en="Late night / early morning surcharge" data-zh-cn="深夜及早晨有附加费" data-zh-hk="深夜及早晨有附加費" data-zh-tw="深夜及早晨有附加費">深夜・早朝割増あり</li>
+          </ul>
+        </div>
+        <div class="price-card price-card--accent">
+          <div class="price-card__icon">🏡</div>
+          <h3 class="price-card__title" data-ja="家事サポート" data-en="Household Support" data-zh-cn="家务帮助" data-zh-hk="家務協助" data-zh-tw="家務協助">家事サポート</h3>
+          <div class="price-card__amount">¥2,000<span data-ja="〜 / 時間" data-en="〜 / hr" data-zh-cn="〜 / 小时" data-zh-hk="〜 / 小時" data-zh-tw="〜 / 小時">〜 / 時間</span></div>
+          <ul class="price-card__list">
+            <li data-ja="最低2時間〜" data-en="Min. 2 hours" data-zh-cn="最少2小时" data-zh-hk="最少2小時" data-zh-tw="最少2小時">最低2時間〜</li>
+            <li data-ja="交通費別途実費" data-en="Travel costs extra" data-zh-cn="交通费另计" data-zh-hk="交通費另計" data-zh-tw="交通費另計">交通費別途実費</li>
+            <li data-ja="定期割引あり" data-en="Regular booking discount" data-zh-cn="定期预约有折扣" data-zh-hk="定期預約有折扣" data-zh-tw="定期預約有折扣">定期割引あり</li>
+          </ul>
+        </div>
+        <div class="price-card price-card--exam">
+          <div class="price-card__badge" data-ja="経験者対応" data-en="Expert" data-zh-cn="经验者" data-zh-hk="經驗者" data-zh-tw="經驗者">経験者対応</div>
+          <div class="price-card__icon">🎓</div>
+          <h3 class="price-card__title" data-ja="小学校受験サポート" data-en="Exam Support" data-zh-cn="小学入学考试辅导" data-zh-hk="小學入學考試輔導" data-zh-tw="小學入學考試輔導">小学校受験サポート</h3>
+          <div class="price-card__amount" data-ja="ご相談" data-en="Inquire" data-zh-cn="请咨询" data-zh-hk="請諮詢" data-zh-tw="請諮詢">ご相談</div>
+          <ul class="price-card__list">
+            <li data-ja="シッティング中に組み込み可" data-en="Can be included in sitting" data-zh-cn="可融入日常照护" data-zh-hk="可融入日常照護" data-zh-tw="可融入日常照護">シッティング中に組み込み可</li>
+            <li data-ja="単独セッションも対応" data-en="Stand-alone sessions available" data-zh-cn="也可单独上课" data-zh-hk="也可單獨上課" data-zh-tw="也可單獨上課">単独セッションも対応</li>
+            <li data-ja="志望校・目標に合わせて調整" data-en="Tailored to target school" data-zh-cn="按目标学校定制" data-zh-hk="按目標學校定制" data-zh-tw="按目標學校定制">志望校・目標に合わせて調整</li>
+          </ul>
+        </div>
+      </div>
+      <p class="service__note" data-ja="※ 上記は目安料金です。詳細はお問い合わせ時にご案内します。" data-en="* Prices shown are estimates. Details provided upon inquiry." data-zh-cn="※ 以上为参考价格，详情请咨询。" data-zh-hk="※ 以上為參考價格，詳情請諮詢。" data-zh-tw="※ 以上為參考價格，詳情請諮詢。">※ 上記は目安料金です。詳細はお問い合わせ時にご案内します。</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__label">FAQ</p>
+        <h2 class="section__title" data-ja="よくある質問" data-en="FAQ" data-zh-cn="常见问题" data-zh-hk="常見問題" data-zh-tw="常見問題">よくある質問</h2>
+      </div>
+      <div class="faq__list">
+        <details class="faq-item">
+          <summary class="faq-item__q" data-ja="対応エリアはどこですか？" data-en="What areas do you cover?" data-zh-cn="服务区域在哪里？" data-zh-hk="服務區域在哪裡？" data-zh-tw="服務區域在哪裡？">対応エリアはどこですか？</summary>
+          <p class="faq-item__a" data-ja="主に東京都内を中心に対応しています。エリアによっては交通費が発生する場合がありますので、まずはご相談ください。" data-en="We mainly cover central Tokyo. Travel costs may apply depending on the area." data-zh-cn="主要服务东京都内区域。根据地区可能会产生交通费，请先咨询。" data-zh-hk="主要服務東京都內區域。根據地區可能產生交通費，請先諮詢。" data-zh-tw="主要服務東京都內區域。根據地區可能產生交通費，請先諮詢。">主に東京都内を中心に対応しています。エリアによっては交通費が発生する場合がありますので、まずはご相談ください。</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__q" data-ja="初めての利用でも安心できますか？" data-en="Is it okay for first-time users?" data-zh-cn="第一次使用也没问题吗？" data-zh-hk="第一次使用也沒問題嗎？" data-zh-tw="第一次使用也沒問題嗎？">初めての利用でも安心できますか？</summary>
+          <p class="faq-item__a" data-ja="はい、もちろんです。初回は事前にご挨拶・ヒアリングの時間を設けています。お子様の様子やご家庭のルールをしっかり確認した上でサポートを開始します。" data-en="Absolutely. We always start with a pre-visit meeting to learn about your child and household preferences." data-zh-cn="当然可以。我们会在首次服务前安排见面沟通，充分了解孩子情况和家庭习惯。" data-zh-hk="當然可以。我們會在首次服務前安排見面溝通，充分了解孩子情況和家庭習慣。" data-zh-tw="當然可以。我們會在首次服務前安排見面溝通，充分了解孩子情況和家庭習慣。">はい、もちろんです。初回は事前にご挨拶・ヒアリングの時間を設けています。お子様の様子やご家庭のルールをしっかり確認した上でサポートを開始します。</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__q" data-ja="急な依頼や当日対応は可能ですか？" data-en="Can I make a last-minute or same-day request?" data-zh-cn="可以临时或当天预约吗？" data-zh-hk="可以臨時或當天預約嗎？" data-zh-tw="可以臨時或當天預約嗎？">急な依頼や当日対応は可能ですか？</summary>
+          <p class="faq-item__a" data-ja="状況によりますが、できる限り対応いたします。まずはLINEまたはお問い合わせフォームよりご連絡ください。" data-en="We'll do our best to accommodate urgent requests. Please contact us via LINE or the inquiry form." data-zh-cn="视情况而定，我们会尽力配合。请通过LINE或联系表单与我们联系。" data-zh-hk="視情況而定，我們會盡力配合。請通過LINE或聯絡表單與我們聯繫。" data-zh-tw="視情況而定，我們會盡力配合。請通過LINE或聯絡表單與我們聯繫。">状況によりますが、できる限り対応いたします。まずはLINEまたはお問い合わせフォームよりご連絡ください。</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__q" data-ja="キャンセルはどうなりますか？" data-en="What is your cancellation policy?" data-zh-cn="如何取消预约？" data-zh-hk="如何取消預約？" data-zh-tw="如何取消預約？">キャンセルはどうなりますか？</summary>
+          <p class="faq-item__a" data-ja="前日までのキャンセルは無料です。当日キャンセルの場合は料金の50%をいただく場合があります。詳細はご予約時にご確認ください。" data-en="Cancellations made by the day before are free. Same-day cancellations may incur a 50% fee." data-zh-cn="前一天取消免费。当天取消可能收取50%费用，详情请在预约时确认。" data-zh-hk="前一天取消免費。當天取消可能收取50%費用，詳情請在預約時確認。" data-zh-tw="前一天取消免費。當天取消可能收取50%費用，詳情請在預約時確認。">前日までのキャンセルは無料です。当日キャンセルの場合は料金の50%をいただく場合があります。詳細はご予約時にご確認ください。</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__q" data-ja="ポピンズシッターと個別契約の違いは何ですか？" data-en="What's the difference between Poppins Sitter and a direct contract?" data-zh-cn="ポピンズ保姆和个人合约有什么区别？" data-zh-hk="ポピンズ保姆和個人合約有什麼區別？" data-zh-tw="ポピンズ保母和個人合約有什麼區別？">ポピンズシッターと個別契約の違いは何ですか？</summary>
+          <p class="faq-item__a" data-ja="ポピンズシッターはアプリ上で予約・決済・保険が完結するため、初めての方や安心重視の方におすすめです。個別契約は直接ご相談の上、料金・頻度・内容を柔軟に調整できます。どちらもひーring本人が対応します。" data-en="Poppins Sitter handles booking, payment, and insurance all through the app — great for first-timers or those who want extra peace of mind. A direct contract allows more flexibility in terms, frequency, and pricing. Either way, I'll be the one providing the care." data-zh-cn="ポピンズ保姆通过应用完成预约、付款和保险，适合初次使用或重视安心的家庭。个人合约则可以直接商量费用、频率和内容，更灵活。两种方式都由ひーring本人提供服务。" data-zh-hk="ポピンズ保姆透過應用完成預約、付款和保險，適合初次使用或重視安心的家庭。個人合約則可以直接商量費用、頻率和內容，更靈活。兩種方式都由ひーring本人提供服務。" data-zh-tw="ポピンズ保母透過應用完成預約、付款和保險，適合初次使用或重視安心的家庭。個人合約則可以直接商量費用、頻率和內容，更靈活。兩種方式都由ひーring本人提供服務。">ポピンズシッターはアプリ上で予約・決済・保険が完結するため、初めての方や安心重視の方におすすめです。個別契約は直接ご相談の上、料金・頻度・内容を柔軟に調整できます。どちらもひーring本人が対応します。</p>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-item__q" data-ja="ペットがいても大丈夫ですか？" data-en="Is it okay if we have a pet?" data-zh-cn="家里有宠物也可以吗？" data-zh-hk="家裡有寵物也可以嗎？" data-zh-tw="家裡有寵物也可以嗎？">ペットがいても大丈夫ですか？</summary>
+          <p class="faq-item__a" data-ja="はい、ペット対応可能です。動物が苦手な場合は事前にお伝えしますが、基本的には問題ありません。" data-en="Yes, pets are fine! I'll let you know in advance if there's any concern." data-zh-cn="可以的，我们接受有宠物的家庭。如有任何顾虑会提前告知。" data-zh-hk="可以的，我們接受有寵物的家庭。如有任何顧慮會提前告知。" data-zh-tw="可以的，我們接受有寵物的家庭。如有任何顧慮會提前告知。">はい、ペット対応可能です。動物が苦手な場合は事前にお伝えしますが、基本的には問題ありません。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOICE -->
+  <section class="section voice" id="voice">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__label">Voice</p>
+        <h2 class="section__title" data-ja="ご利用者の声" data-en="What Clients Say" data-zh-cn="客户评价" data-zh-hk="客戶評價" data-zh-tw="客戶評價">ご利用者の声</h2>
+      </div>
+      <div class="voice__grid">
+        <div class="voice-card">
+          <p class="voice-card__text" data-ja="初めてのベビーシッターで不安でしたが、事前のヒアリングが丁寧で安心できました。子どもも懐いていて、また頼みたいと思います！" data-en="I was nervous about using a babysitter for the first time, but the pre-visit chat put me at ease. My child loved her — we'll definitely book again!" data-zh-cn="第一次使用保姆很担心，但事前沟通很细心让我放心了。孩子很喜欢，一定会再预约！" data-zh-hk="第一次使用保姆很擔心，但事前溝通很細心讓我放心了。孩子很喜歡，一定會再預約！" data-zh-tw="第一次使用保母很擔心，但事前溝通很細心讓我放心了。孩子很喜歡，一定會再預約！">初めてのベビーシッターで不安でしたが、事前のヒアリングが丁寧で安心できました。子どもも懐いていて、また頼みたいと思います！</p>
+          <div class="voice-card__author">
+            <span class="voice-card__name" data-ja="30代・主婦 / 2歳のお子さまのご家庭" data-en="30s, homemaker / family with 2-year-old" data-zh-cn="30多岁・家庭主妇 / 2岁孩子的家庭" data-zh-hk="30多歲・家庭主婦 / 2歲孩子的家庭" data-zh-tw="30多歲・家庭主婦 / 2歲孩子的家庭">30代・主婦 / 2歳のお子さまのご家庭</span>
+          </div>
+        </div>
+        <div class="voice-card">
+          <p class="voice-card__text" data-ja="共働きで家事が追いつかず悩んでいたところに、家事サポートをお願いしました。家に帰ると部屋が整っていて、本当に助かっています。定期的にお願いしています。" data-en="We were struggling to keep up with housework as a dual-income family. Coming home to a tidy house has been a lifesaver. Now we book regularly." data-zh-cn="双职工家庭家务做不过来，请了家务帮助。回家看到整洁的房间真的很感激，现在定期预约了。" data-zh-hk="雙職工家庭家務做不過來，請了家務協助。回家看到整潔的房間真的很感激，現在定期預約了。" data-zh-tw="雙薪家庭家務做不過來，請了家務協助。回家看到整潔的房間真的很感激，現在定期預約了。">共働きで家事が追いつかず悩んでいたところに、家事サポートをお願いしました。家に帰ると部屋が整っていて、本当に助かっています。定期的にお願いしています。</p>
+          <div class="voice-card__author">
+            <span class="voice-card__name" data-ja="30代・会社員 / 共働きご夫婦" data-en="30s, office worker / dual-income couple" data-zh-cn="30多岁・上班族 / 双职工夫妻" data-zh-hk="30多歲・上班族 / 雙職工夫妻" data-zh-tw="30多歲・上班族 / 雙薪夫妻">30代・会社員 / 共働きご夫婦</span>
+          </div>
+        </div>
+        <div class="voice-card">
+          <p class="voice-card__text" data-ja="産後で体が辛い時期に産後パッケージを利用しました。育児も家事もサポートしてもらい、体と心がとても楽になりました。本当に感謝しています。" data-en="I used the postpartum package when my body was exhausted after birth. Having support for both baby and chores was such a relief." data-zh-cn="产后身体很辛苦时使用了产后套餐。育儿和家务都得到了帮助，身心轻松了很多，非常感激。" data-zh-hk="產後身體很辛苦時使用了產後套餐。育兒和家務都得到了幫助，身心輕鬆了很多，非常感激。" data-zh-tw="產後身體很辛苦時使用了產後套餐。育兒和家務都得到了幫助，身心輕鬆了很多，非常感激。">産後で体が辛い時期に産後パッケージを利用しました。育児も家事もサポートしてもらい、体と心がとても楽になりました。本当に感謝しています。</p>
+          <div class="voice-card__author">
+            <span class="voice-card__name" data-ja="20代・産後1ヶ月のご家庭" data-en="20s / family with 1-month-old newborn" data-zh-cn="20多岁 / 产后1个月的家庭" data-zh-hk="20多歲 / 產後1個月的家庭" data-zh-tw="20多歲 / 產後1個月的家庭">20代・産後1ヶ月のご家庭</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container about__inner">
+      <div class="about__content">
+        <p class="section__label">About</p>
+        <h2 class="section__title about__title" data-ja="ひーringについて" data-en="About ひーring" data-zh-cn="关于ひーring" data-zh-hk="關於ひーring" data-zh-tw="關於ひーring">ひーringについて</h2>
+        <div class="about__text">
+          <p data-ja="はじめまして、ひーringを運営しています。子育て中のご家庭が「少し楽になれる」「自分の時間が持てる」、そんな日常のサポートをしたいという想いからこの活動を始めました。" data-en="Hello! I run ひーring. I started this because I wanted to help families with young children find a little more ease in their day." data-zh-cn="你好！我是ひーring的主理人。希望让育儿中的家庭能稍微轻松一些。" data-zh-hk="你好！我是ひーring的主理人。希望讓育兒中的家庭能稍微輕鬆一些。" data-zh-tw="你好！我是ひーring的主理人。希望讓育兒中的家庭能稍微輕鬆一些。">はじめまして、ひーringを運営しています。子育て中のご家庭が「少し楽になれる」「自分の時間が持てる」、そんな日常のサポートをしたいという想いからこの活動を始めました。</p>
+          <p data-ja="小学校受験を経験した立場から、受験準備中のご家庭への寄り添い方を知っています。ペーパー対策から行動観察・面接マナーまで、日常のシッティングの中で自然にサポートします。"
+            data-en="Having gone through elementary school entrance exams myself, I understand what families need during that time. I weave exam prep — paper tests, behavior, interview etiquette — naturally into everyday care."
+            data-zh-cn="凭借自身小学入学考试的经历，我深知备考家庭的需求，能在日常照护中自然融入备考支持。"
+            data-zh-hk="憑藉自身小學入學考試的經歷，我深知備考家庭的需求，能在日常照護中自然融入備考支援。"
+            data-zh-tw="憑藉自身小學入學考試的經歷，我深知備考家庭的需求，能在日常照護中自然融入備考支援。">小学校受験を経験した立場から、受験準備中のご家庭への寄り添い方を知っています。ペーパー対策から行動観察・面接マナーまで、日常のシッティングの中で自然にサポートします。</p>
+          <p data-ja="ベビーシッターとして培った経験と、家事サポートの実績をもとに、お子様もご両親も笑顔でいられる時間を一緒につくっていきます。「こんなこと頼んでいいの？」と思うような小さなことでも、ぜひ気軽にご相談ください。" data-en="Drawing on my experience as a babysitter and household helper, I work to create moments where both children and parents can smile. Please don't hesitate to reach out." data-zh-cn="凭借保姆经验，我致力于为孩子和父母创造更多欢笑的时光。即使是小事也请放心联系。" data-zh-hk="憑藉保姆經驗，我致力於為孩子和父母創造更多歡笑的時光。即使是小事也請放心聯絡。" data-zh-tw="憑藉保母經驗，我致力於為孩子和父母創造更多歡笑的時光。即使是小事也請放心聯絡。">ベビーシッターとして培った経験と、家事サポートの実績をもとに、お子様もご両親も笑顔でいられる時間を一緒につくっていきます。「こんなこと頼んでいいの？」と思うような小さなことでも、ぜひ気軽にご相談ください。</p>
+        </div>
+        <div class="about__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103995.90792570272!2d139.6188!3d35.6894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b857628235d%3A0xcdd8686b29f80d50!2z5p2x5Lqs6YO9!5e0!3m2!1sja!2sjp!4v1700000000000"
+            width="100%" height="240" style="border:0;border-radius:12px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="対応エリア：東京都内">
+          </iframe>
+          <p class="about__map-note" data-ja="主な対応エリア：東京都内" data-en="Service area: Tokyo" data-zh-cn="主要服务区域：东京都内" data-zh-hk="主要服務區域：東京都內" data-zh-tw="主要服務區域：東京都內">主な対応エリア：東京都内</p>
+        </div>
+        <div class="about__tags">
+          <span class="tag" data-ja="保育経験あり" data-en="Childcare experience" data-zh-cn="有育儿经验" data-zh-hk="有育兒經驗" data-zh-tw="有育兒經驗">保育経験あり</span>
+          <span class="tag" data-ja="丁寧・誠実" data-en="Careful & sincere" data-zh-cn="细心诚实" data-zh-hk="細心誠實" data-zh-tw="細心誠實">丁寧・誠実</span>
+          <span class="tag" data-ja="ペット対応可" data-en="Pet-friendly" data-zh-cn="可接受宠物" data-zh-hk="可接受寵物" data-zh-tw="可接受寵物">ペット対応可</span>
+          <span class="tag" data-ja="柔軟対応" data-en="Flexible" data-zh-cn="灵活应对" data-zh-hk="靈活應對" data-zh-tw="靈活應對">柔軟対応</span>
+          <span class="tag tag--accent" data-ja="小学校受験対応" data-en="Exam support" data-zh-cn="小学受验对应" data-zh-hk="小學受驗對應" data-zh-tw="小學受驗對應">小学校受験対応</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__label">Contact</p>
+        <h2 class="section__title" data-ja="お問い合わせ" data-en="Get in Touch" data-zh-cn="联系我们" data-zh-hk="聯絡我們" data-zh-tw="聯絡我們">お問い合わせ</h2>
+        <p class="section__desc" data-ja="ご相談・お見積もりは無料です。お気軽にメッセージをお送りください。2営業日以内にご返信します。" data-en="Consultations and quotes are free. We'll reply within 2 business days." data-zh-cn="咨询和报价均免费。我们将在2个工作日内回复。" data-zh-hk="諮詢和報價均免費。我們將在2個工作日內回覆。" data-zh-tw="諮詢和報價均免費。我們將在2個工作日內回覆。">ご相談・お見積もりは無料です。お気軽にメッセージをお送りください。2営業日以内にご返信します。</p>
+      </div>
+      <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
+        <p style="display:none"><label>Don't fill this out: <input name="bot-field" /></label></p>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name" data-ja="お名前" data-en="Your Name" data-zh-cn="姓名" data-zh-hk="姓名" data-zh-tw="姓名">お名前 <span class="required">*</span></label>
+            <input type="text" id="name" name="name" data-placeholder-ja="山田 花子" data-placeholder-en="Jane Smith" data-placeholder-zh-cn="张 花" data-placeholder-zh-hk="陳 小花" data-placeholder-zh-tw="陳 小花" placeholder="山田 花子" required />
+          </div>
+          <div class="form-group">
+            <label for="email" data-ja="メールアドレス" data-en="Email Address" data-zh-cn="电子邮件" data-zh-hk="電郵地址" data-zh-tw="電子郵件">メールアドレス <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service" data-ja="ご希望のサービス" data-en="Service Requested" data-zh-cn="所需服务" data-zh-hk="所需服務" data-zh-tw="所需服務">ご希望のサービス</label>
+          <select id="service" name="service">
+            <option value="" data-ja="選択してください" data-en="Please select" data-zh-cn="请选择" data-zh-hk="請選擇" data-zh-tw="請選擇">選択してください</option>
+            <option value="baby" data-ja="ベビーシッター" data-en="Babysitting" data-zh-cn="保姆服务" data-zh-hk="保姆服務" data-zh-tw="保母服務">ベビーシッター</option>
+            <option value="housework" data-ja="家事サポート" data-en="Household Support" data-zh-cn="家务帮助" data-zh-hk="家務協助" data-zh-tw="家務協助">家事サポート</option>
+            <option value="both" data-ja="両方" data-en="Both" data-zh-cn="两者都要" data-zh-hk="兩者都要" data-zh-tw="兩者都要">両方</option>
+            <option value="other" data-ja="その他・相談したい" data-en="Other / Not sure" data-zh-cn="其他" data-zh-hk="其他" data-zh-tw="其他">その他・相談したい</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message" data-ja="メッセージ" data-en="Message" data-zh-cn="留言" data-zh-hk="留言" data-zh-tw="留言">メッセージ <span class="required">*</span></label>
+          <textarea id="message" name="message" rows="5" data-placeholder-ja="ご希望の日程・内容・お子様の年齢など、なんでもお気軽にどうぞ。" data-placeholder-en="Feel free to share preferred dates, service details, your child's age, or anything else." data-placeholder-zh-cn="请随意告知您希望的日期、服务内容、孩子的年龄等。" data-placeholder-zh-hk="請隨意告知您希望的日期、服務內容、孩子的年齡等。" data-placeholder-zh-tw="請隨意告知您希望的日期、服務內容、孩子的年齡等。" placeholder="ご希望の日程・内容・お子様の年齢など、なんでもお気軽にどうぞ。" required></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full" data-ja="送信する" data-en="Send Message" data-zh-cn="发送" data-zh-hk="發送" data-zh-tw="送出">送信する</button>
+        <div class="form-success" id="formSuccess" data-ja="✅ メッセージを送信しました。2営業日以内にご連絡いたします。" data-en="✅ Message sent! We'll get back to you within 2 business days." data-zh-cn="✅ 消息已发送！" data-zh-hk="✅ 訊息已發送！" data-zh-tw="✅ 訊息已送出！">✅ メッセージを送信しました。2営業日以内にご連絡いたします。</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__copy">© 2025 ひーring. All rights reserved. ｜ <a href="privacy.html" style="color:inherit;text-decoration:none;">プライバシーポリシー</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- LINE Chat Button -->
+  <a href="https://lin.ee/XXXXXXX" target="_blank" rel="noopener" class="line-btn" id="lineBtn" aria-label="LINEで問い合わせ">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="28" height="28" fill="white">
+      <path d="M24 4C12.95 4 4 11.86 4 21.5c0 5.78 3.23 10.9 8.2 14.17-.32 1.2-1.17 4.35-1.34 5.03-.21.84.31 .83.65.6.27-.18 4.3-2.92 6.04-4.1.78.1 1.58.16 2.45.16 11.05 0 20-7.86 20-17.5S35.05 4 24 4z"/>
+    </svg>
+    <span class="line-btn__text" data-ja="LINEで相談" data-en="Chat on LINE" data-zh-cn="LINE咨询" data-zh-hk="LINE查詢" data-zh-tw="LINE詢問">LINEで相談</span>
+  </a>
+</body>
+</html>

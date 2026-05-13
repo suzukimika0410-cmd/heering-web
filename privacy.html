@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>プライバシーポリシー | ひーring</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .privacy-page { padding: 120px 40px 80px; max-width: 760px; margin: 0 auto; }
+    .privacy-page h1 { font-family: 'Noto Sans JP', sans-serif; font-size: clamp(1.4rem, 3vw, 1.8rem); font-weight: 300; color: var(--text-dark); margin-bottom: 8px; }
+    .privacy-page .updated { font-size: .82rem; color: var(--text-light); margin-bottom: 48px; }
+    .privacy-page h2 { font-size: 1rem; font-weight: 500; color: var(--text-dark); margin: 36px 0 12px; }
+    .privacy-page p, .privacy-page li { font-size: .92rem; color: var(--text-mid); line-height: 2; font-weight: 300; }
+    .privacy-page ul { padding-left: 1.4em; margin-top: 8px; }
+    .privacy-page li { margin-bottom: 6px; }
+    .privacy-page a { color: var(--gold); text-decoration: none; }
+    .privacy-page a:hover { text-decoration: underline; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; font-size: .88rem; color: var(--gold); text-decoration: none; margin-bottom: 40px; }
+    .back-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="logo.png" alt="ひーring" class="nav__logo-img" />
+      </a>
+    </div>
+  </header>
+
+  <main class="privacy-page">
+    <a href="index.html" class="back-link">← トップページに戻る</a>
+    <h1>プライバシーポリシー</h1>
+    <p class="updated">最終更新日：2025年1月1日</p>
+
+    <p>ひーring（以下「当サービス」）は、お客様の個人情報の保護を重要と考え、以下のとおりプライバシーポリシーを定めます。</p>
+
+    <h2>1. 収集する個人情報</h2>
+    <p>当サービスでは、お問い合わせフォームを通じて以下の情報を収集する場合があります。</p>
+    <ul>
+      <li>お名前</li>
+      <li>メールアドレス</li>
+      <li>ご希望のサービス内容</li>
+      <li>お問い合わせ内容</li>
+    </ul>
+
+    <h2>2. 利用目的</h2>
+    <p>収集した個人情報は、以下の目的のみに使用します。</p>
+    <ul>
+      <li>お問い合わせへの返信・対応</li>
+      <li>サービスの提供・調整に必要な連絡</li>
+    </ul>
+
+    <h2>3. 第三者への提供</h2>
+    <p>当サービスは、法令に基づく場合を除き、お客様の個人情報を第三者に提供・開示することはありません。</p>
+
+    <h2>4. 個人情報の管理</h2>
+    <p>収集した個人情報は適切に管理し、不正アクセス・紛失・漏洩の防止に努めます。目的達成後は速やかに削除します。</p>
+
+    <h2>5. お問い合わせ</h2>
+    <p>個人情報の取り扱いに関するお問い合わせは、<a href="index.html#contact">お問い合わせフォーム</a>よりご連絡ください。</p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__copy">© 2025 ひーring. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    });
+  </script>
+</body>
+</html>
